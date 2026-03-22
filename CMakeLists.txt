@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.10)
+project(CodeCustodian)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+include_directories(src)
+
+add_executable(codecustodian
+    src/main.cpp
+    src/Analyzer.cpp
+    src/Organizer.cpp
+    src/ProjectUtils.cpp
+    src/IncludeChecker.cpp
+    src/Formatter.cpp
+)
