@@ -9,6 +9,7 @@ include_directories(src)
 add_executable(codecustodian
     src/main.cpp
     src/Analyzer.cpp
+    src/Reporter.cpp
     src/Organizer.cpp
     src/ProjectUtils.cpp
     src/IncludeChecker.cpp

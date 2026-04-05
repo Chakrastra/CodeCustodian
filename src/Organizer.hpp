@@ -3,5 +3,7 @@
 
 class Organizer {
 public:
-    static void organize(const std::string& path, bool dryRun);
+    // Classic mode: move .cpp → src/, .h/.hpp → include/
+    // by-ext mode:  move every file → <extension>/ folder
+    static void organize(const std::string& path, bool dryRun, bool byExt = false);
 };
