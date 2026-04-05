@@ -99,33 +99,50 @@ Analysis Result for: ./my_project
 codecustodian report --path ./my_project
 ```
 ```
+Generating report for: .
+
 ============================================================
   FILE DISTRIBUTION REPORT
 ============================================================
-  Scanned directory - total files: 26
+  Scanned directory - total files: 21
 
-  Extension     Files     Share
+  Extension   Files     Share
 ------------------------------------------------------------
-  .cpp          7         26.9%
-  .hpp          7         26.9%
-  .txt          4         15.4%
-  ...
+  .cpp        7         33.3%
+  .hpp        6         28.6%
+  (none)      2         9.5%
+  .txt        2         9.5%
+  .exe        1         4.8%
+  .json       1         4.8%
+  .md         1         4.8%
+  .zip        1         4.8%
+------------------------------------------------------------
 
 ============================================================
   STORAGE USAGE REPORT
 ============================================================
-  Total storage: 1.85 MB
+  Total storage: 1.55 MB
 
-  Extension     Total Size    Files     Share
+  Extension   Total Size    Files     Share
 ------------------------------------------------------------
-  .exe          1.74 MB       3         94.2%
-  .cpp          27.15 KB      7         1.4%
-  ...
+  .exe        1.44 MB       1         93.0%
+  .zip        72.94 KB      1         4.6%
+  .cpp        26.65 KB      7         1.7%
+  .md         5.18 KB       1         0.3%
+  .hpp        4.03 KB       6         0.3%
+  (none)      1.45 KB       2         0.1%
+  .txt        337 B         2         0.0%
+  .json       228 B         1         0.0%
+------------------------------------------------------------
 
   Top 5 Largest Files:
 ------------------------------------------------------------
   codecustodian.exe                       1.44 MB
-  ...
+  CliFM.zip                               72.94 KB
+  Reporter.cpp                            7.27 KB
+  Organizer.cpp                           5.61 KB
+  README.md                               5.18 KB
+------------------------------------------------------------
 
 ============================================================
   MODIFICATION TIME REPORT
@@ -133,13 +150,20 @@ codecustodian report --path ./my_project
 
   Newest 5 Files:
 ------------------------------------------------------------
-  Reporter.cpp                          2026-04-05 14:47
-  ...
+  sample_report.txt                     2026-04-05 15:20
+  README.md                             2026-04-05 15:05
+  codecustodian.exe                     2026-04-05 14:54
+  Organizer.cpp                         2026-04-05 14:53
+  Analyzer.cpp                          2026-04-05 14:53
 
   Oldest 5 Files:
 ------------------------------------------------------------
-  fs_compat.hpp                         2026-01-07 12:44
-  ...
+  CliFM.zip                             2026-03-03 01:43
+  IncludeChecker.hpp                    2026-03-22 02:07
+  ProjectUtils.hpp                      2026-03-22 02:08
+  ProjectUtils.cpp                      2026-03-22 02:08
+  Formatter.hpp                         2026-03-22 02:08
+------------------------------------------------------------
 ```
 
 **Organize C++ files (classic mode):**
